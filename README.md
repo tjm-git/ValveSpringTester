@@ -27,4 +27,6 @@ not in the current sketch.
 
 The rotary encoder is a GHB-38, incremental, NPN output unit with 2048 PPR.  This needs to be calibrated
 for a linear length readout either by accurately measuring the movement of the arbor ram and using a
-small sketch to count the points or by moving the operating arm a known number of
+small sketch to count the points or by moving the operating arm a known number of degrees and just doing
+the math, 2048ppr/360.  Readout for length is to 0.01" as most, if not all, spring specs are to hundreths.
+
