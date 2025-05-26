@@ -1,5 +1,4 @@
 # ValveSpringTester
-
     This project is to convert an arbor press to check valve spring height vs PSI using 
 a load cell and rotary encoder. This project uses a 1/2 ton arbor press to compress 
 a valve spring to it's working or test length and give a readout of compression force 
