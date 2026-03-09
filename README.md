@@ -7,11 +7,9 @@ ton arbor press version is in progress but the issue with the 1 ton from Harbor
 Freight is that the gear, housing and rack are quite sloppy which makes it difficult
 to hold the start-up calibration.  Either version of the the arbor press has a few 
 modifications as described below.  
-
     The arbor press base has only one mod, that being one of the ram adjustment 
 screws is drilled and tapped for a small bolt to fix the rotary encoder body 
 stationary while its shaft rotates with the gear shaft.  
-
     The ram was removed and the bottom end drilled and tapped to fix a 2 1/2" 
 aluminum disk approximately 0.225" thick with a countersunk 1/4"-20 flat head hex 
 drive bolt.  This disk will accomodate most spring diameters and the 
@@ -25,7 +23,6 @@ To keep the rotary encoder housing fixed to the arbor press, the provided bracke
 attached to the encoder was used with a 4mm hex drive screw/bolt and a small spacer 
 of the correct thickness and then screwed into the hole we drilled and tapped in
 the end of the gear shaft.
-
     The load cell just rests on the arbor base under the ram and disk.  It could 
 use a way to keep it centered, something like a fixed plate or a recess cut into 
 the arbor itself.  With the load cell in place on the base, this particular 1/2 
