@@ -1,21 +1,31 @@
 # ValveSpringTester
-This project is to convert an arbor press to check valve spring height vs PSI using 
-a load cell and rotary encoder. This project uses a 1/2 ton arbor press to compress 
-a valve spring to it's working or test length and give a readout of compression force 
-in Pounds Per Square Inch (PSI) to compare to specifications.  Briefly, the arbor 
-press has a few modifications.  The arbor press base has only one mod, that being 
-one of the ram adjustment screws drilled and tapped for a small bolt to fix the rotary 
-encoder body fixed.  The ram was removed and the bottom end drilled and tapped to 
-mount a 2 1/2" aluminum disk approximately 0.225" thick with a countersunk 1/4"-20 
-flat head hex drive bolt.  This disk will accomodate most spring diameters and the 
+This project is to convert a 1/2 ton or 1 ton arbor press to check valve spring height 
+vs PSI using a load cell and rotary encoder. This project uses a 1/2 ton arbor press 
+to compress a valve spring to it's working or test length and give a readout of 
+compression force in Pounds Per Square Inch (PSI) to compare to specifications.  A one
+ton arbor press version is in progress but the issue with the 1 ton from Harbor 
+Freight is that the gear, housing and rack are quite sloppy which makes it difficult
+to hold the start-up calibration.  Either version of the the arbor press has a few 
+modifications as described below.  
+
+    The arbor press base has only one mod, that being one of the ram adjustment 
+screws is drilled and tapped for a small bolt to fix the rotary encoder body 
+stationary while its shaft rotates with the gear shaft.  
+
+    The ram was removed and the bottom end drilled and tapped to fix a 2 1/2" 
+aluminum disk approximately 0.225" thick with a countersunk 1/4"-20 flat head hex 
+drive bolt.  This disk will accomodate most spring diameters and the 
 countersunk fastener will allow the disk to mate flat to the load cell surface for 
 zeroing.
-    The horizontal operating shaft was removed, placed in the lathe, drilled with 
-an 8mm drill in the non-handle end, fitted with an 8mm pin (press fit) leaving 
-enough of a protrusion to fit into the rotary encoder bore and tightened with 
-the supplied grub screws.  To keep the rotary encoder housing fixed to the arbor 
-press, the drilled and tapped adjustment bolt we mentioned earlier was used with 
-a 4mm hex drive screw/bolt and a small spacer.
+    The horizontal operating shaft, gear shaft in the diagrams, was removed, 
+placed in the lathe, drilled with an 8mm drill in the non-handle end.  The resulting
+8mm hole allows fitting with an 8mm pin (press fit) leaving enough of a protrusion 
+to fit into the rotary encoder bore, then tightened with the supplied grub screws.  
+To keep the rotary encoder housing fixed to the arbor press, the provided bracket 
+attached to the encoder was used with a 4mm hex drive screw/bolt and a small spacer 
+of the correct thickness and then screwed into the hole we drilled and tapped in
+the end of the gear shaft.
+
     The load cell just rests on the arbor base under the ram and disk.  It could 
 use a way to keep it centered, something like a fixed plate or a recess cut into 
 the arbor itself.  With the load cell in place on the base, this particular 1/2 
