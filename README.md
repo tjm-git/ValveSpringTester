@@ -15,23 +15,44 @@ aluminum disk approximately 0.225" thick with a countersunk 1/4"-20 flat head he
 drive bolt.  This disk will accomodate most spring diameters and the 
 countersunk fastener will allow the disk to mate flat to the load cell surface for 
 zeroing.
-    The horizontal operating shaft, gear shaft in the diagrams, was removed, 
-placed in the lathe, drilled with an 8mm drill in the non-handle end.  The resulting
-8mm hole allows fitting with an 8mm pin (press fit) leaving enough of a protrusion 
-to fit into the rotary encoder bore, then tightened with the supplied grub screws.  
-To keep the rotary encoder housing fixed to the arbor press, the provided bracket 
-attached to the encoder was used with a 4mm hex drive screw/bolt and a small spacer 
-of the correct thickness and then screwed into the hole we drilled and tapped in
-the end of the gear shaft.
-    The load cell just rests on the arbor base under the ram and disk.  It could 
-use a way to keep it centered, something like a fixed plate or a recess cut into 
-the arbor itself.  With the load cell in place on the base, this particular 1/2 
+    The rotary encoder has an 8mm bore.  To attach the encoder to the gear shaft the
+gear shaft is removed, placed in the lathe and an 8mm hole/bore is drilled in the 
+smaller end of the shaft.  An appropriate length of 8mm round stock is cut and fitted
+to connect the encoder bore and the 8mm bore in the gear shaft.  The encoder has grub
+screws but fit in the gear shaft can easily be made as a press fit or can also be 
+drilled and tapped for grub screws.  To keep the rotary encoder housing fixed to 
+the arbor press, the provided encoder bracket is attached to the encoder with a
+4mm hex drive screw/bolt and a small spacer of the correct thickness and then 
+screwed into the hole we drilled and tapped in one of the ram adjustment bolts.
+    The load cell is easy as it just rests on the arbor base under the ram and 
+disk.  It could use some way to keep it centered under the disk that was affixed
+to the bottom of the ram.  Note: there is a warning on the load cell that would
+indicate readings may not be accurate unless any pressure is centered on the load
+cell disc.  With the load cell in place on the base, this particular 1/2 
 ton press is limited to springs of not more than 3.1" of free spring length.
     The electronics of the unit consists of a XIAO ESP32S3 SOC collecting and 
-processing the inputs, an I2C LCD display, a generic HX711 load cell amplifier 
+processing the inputs from an HX711 load cell amplifier and the rotary encoder.  
+There is a capacitive touch switch mounted at the top and inside of the case for
+tare operations and that 'zeros' the readings anytime after the unit is turned on.
+The processor reads the load cell continuously but the rotary encoder used for the
+length/distance reading is interrupt driven.  The HX711 load cell amplifier is a
+common part used for load cells and scales.  There are other chips available but
+this one appears to be a favorite.  The display is an I2C 2004 LCD, 4 lines of 20
+characters and was easy to use.  Any number of alternative displays can be use 
+depending on your own creativity.  My 1 ton arbor press in progress uses a CYD, 
+cheap yellow display, that has a graphics based 2.8" TFT LCD and is or will be
+touch screen based.
+    There are endless ways to put the electronics together depending on which
+ESP32 board you use.  I used an ElectroCookie Mini 6P circuit board with an
+ESP32C6 mini and the HX711 boards mounted and soldered directly to the 6P then
+wired accordingly.  The ElectroCookie circuit board can be soldered and the 
+traces lent itself nicely for the wiring.  There are better ways to do this
+but this is how mine wound up.  Schematic to follow along with some pics in 
+the appropriate directory.
+(in progress, more to come)
 taking the load cell output and feeding the result to the ESP32S3, and the rotary 
-encoder feeding the spring height length data also to the ESP32S3.  The encoder 
-and load cell wiring are attached to a small generic circuit board housing the 
+encoder feeding the spring height/length data also to the ESP32S3.  The encoder 
+and load cell wiring are attached to a small generic circuit board that house the 
 ESP32S3 and the HX711 boards.  This board and the I2C 2004 LCD are mounted in a 
 custom 3D printed case designed with Freecad. There is also a capacitive touch 
 switch cemented to the inside of the case specifically for a tare adjustment if 
